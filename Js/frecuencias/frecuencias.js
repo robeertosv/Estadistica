@@ -20,10 +20,10 @@ for (let i = 0; i < grupos.length; i++) {
 }
 
 let fi = frecuenciaAbsoluta(data, limites)
-let fri = frecuenciaAbsolutaAcumulada(data, limites)
+let Fi = frecuenciaAbsolutaAcumulada(data, limites)
 console.log(`Agrupados por radio:`, grupos)
 console.log(`Marca de clase:`, marcas)
 console.log(`Frecuencia Absoluta: ${fi}`)
-console.log(`Frecuencia Absoluta Acumulada: ${fri}`) 
+console.log(`Frecuencia Absoluta Acumulada: ${Fi}`) 
 console.log(`Frecuencia Relativa: ${frecuenciasRelativas(fi, dataLen)}`)
-console.log(`Frecuencia Relativa Acumulada: ${frecuenciasRelativas(fri, dataLen)}`)
+console.log(`Frecuencia Relativa Acumulada: ${frecuenciasRelativas(Fi, dataLen)}`)

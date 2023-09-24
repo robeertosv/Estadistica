@@ -13,9 +13,7 @@ r = grupos.__len__()
 for i in range(r):
     marcas.append((grupos[i][1] + grupos[i][0]) / 2)
 
-# Creación de funciones
-
-
+#Calcula la frecuencia absoluta
 def frecuenciaAbsoluta(data, lim):
     llim = len(lim)
     frecuenciaAbsoluta = [0] * llim
@@ -33,7 +31,7 @@ def frecuenciaAbsoluta(data, lim):
 
     return f
 
-
+#Calcular la frecuencia absoluta acumulada
 def frecuenciaAbsolutaAcumulada(data, lim):
     llim = len(lim)
     frecuenciaAbsoluta = [0] * llim
@@ -57,3 +55,22 @@ def frecuenciaAbsolutaAcumulada(data, lim):
         f.append(frecuenciaAbsolutaAcumulada[i])
     
     return f
+
+def frecuenciasRelativas(abs , dataL):
+    f= []
+    for freq in abs:
+        r = freq / dataL
+        r = format(round(r, 2))
+        f.append(r)
+        
+    return f
+
+fi = frecuenciaAbsoluta(data, limites)
+Fi = frecuenciaAbsolutaAcumulada(data, limites)
+
+print(f"Agrupadas por radio:", grupos)
+print(f"Marca de clase", marcas)
+print(f"Frecuencia Absoluta: {fi}")
+print(f"Frecuencia Absoluta Acumulada: {Fi}")
+print(f"Frecuencia Relativa: {frecuenciasRelativas(fi, dataL)}")
+print(f"Frecuencia Relativa Acumulada: {frecuenciasRelativas(Fi, dataL)}")
