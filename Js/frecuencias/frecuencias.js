@@ -11,7 +11,7 @@ const dataLen = data.length;
 const rango = data[dataLen - 1] - data[0];
 const limites = [10, 20, 30, 40, 50];
 const grupos = [[10,20], [20,30], [30,40], [40,50]]
-const amplitud = limites[0][1] - limites[0][0]
+const amplitud = grupos[0][1] - grupos[0][0]
 
 let marcas = [];
 
