@@ -1,7 +1,5 @@
 // Los cálculos están basados según las fórmulas vistas en la clase de Estadística
 
-//import frecuenciaAbsoluta from '../frecuencias/frecuenciaAbsoluta.js'
-
 const data = [13, 15, 16, 20, 20, 22, 27, 29, 30, 33, 34, 42, 47];
 
 function media(data) {
